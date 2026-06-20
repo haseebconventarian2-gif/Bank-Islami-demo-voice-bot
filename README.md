@@ -15,6 +15,14 @@ Azure-native banking voice bot with GPT-4o, Azure AI Search, speech services, Wh
 
 Azure-native banking voice bot with GPT-4o, Azure AI Search, speech services, WhatsApp, and ACS integration.
 
+## 📖 The Story
+
+Banking assistants often begin as simple FAQ chatbots. This project explores what happens when that idea grows into a multimodal service: customers can type or speak, answers can be grounded in approved banking information, and the same intelligence can be exposed through web and messaging channels.
+
+The implementation evolved from a local FAISS-style retrieval experiment toward an Azure-native architecture. Azure AI Search supplies relevant context, GPT-4o produces the response, and speech services handle the audio path. FastAPI ties these pieces together behind health, text, audio, media, and webhook endpoints.
+
+Today, the repository is best understood as a production-oriented reference architecture. Its next chapter is operational hardening: managed identity, durable media storage, automated evaluation, observability, and stronger channel security.
+
 ## Highlights
 
 - Text conversation endpoint
@@ -89,4 +97,5 @@ This is a learning and reference implementation. Review security, validation, mo
 - Define retention and privacy controls for audio and customer data.
 
 > This README reflects the current codebase. External AI, telephony, and messaging features require their respective accounts, assets, and approvals.
+
 
